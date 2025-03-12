@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+    <h1>DOM</h1>
+
+    <!-- Theme Toggle -->
+    <section>
+        <h2>Theme Toggle</h2>
+        <button id="theme-toggle">Toggle Dark Mode</button>
+    </section>
+
+    <!-- Countdown Timer -->
+    <section>
+        <h2>Countdown Timer</h2>
+        <input type="number" id="seconds" placeholder="Enter seconds" min="1" />
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="resume">Resume</button>
+        <button id="reset">Reset</button>
+        <div id="timer">0</div>
+    </section>
+
+    <!-- Change Style of an HTML Element -->
+    <section>
+        <h2>Change Style of an Element</h2>
+        <div id="styledElement"></div>
+        <button id="changeStyle">Change Style</button>
+    </section>
+
+    <!-- Sorting and Filtering -->
+    <section>
+        <h2>Sort and Filter List</h2>
+        <input type="text" id="filterInput" placeholder="Filter items" />
+        <button id="addItem">Add Item</button>
+        <button id="sortItems">Sort Alphabetically</button>
+        <ul id="itemList"></ul>
+    </section>
+
+    <!-- Dynamic Table -->
+    <section>
+        <h2>Dynamic Table</h2>
+        <input type="text" id="tableInput" placeholder="Enter data" />
+        <button id="addRow">Add Row</button>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <!-- Interactive Image Gallery -->
+    <section>
+        <h2>Interactive Image Gallery</h2>
+        <div id="imageGallery">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9YYh5Fk1u9VsWWr1MhkyQeOzeNbtnnMO96g&s" alt="Image 1" />
+            <img src="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg" alt="Image 2" />
+            <img src="https://media.istockphoto.com/id/1399246824/photo/digital-eye-wave-lines-stock-background.jpg?s=612x612&w=0&k=20&c=1cW5xuLcb6HPDj6CLQQFBvGK5_fJvx9eA2egik-3hAc=" alt="Image 3" />
+            <img src="https://st2.depositphotos.com/1591133/8812/i/450/depositphotos_88120646-stock-photo-idyllic-summer-landscape-with-clear.jpg" alt="Image 4" />
+        </div>
+        <div id="largeImage" style="display:none; margin-top: 20px;">
+            <img id="displayedImage" src="" alt="Large View" style="width: 300px;" />
+        </div>
+    </section>
+
+    <div id="notification" class="notification"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
